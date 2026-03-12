@@ -587,6 +587,179 @@ HTML_TEMPLATE = """
             .forecast-grid { grid-template-columns: 1fr; }
             .days-section { justify-content: flex-start; }
         }
+
+                /* ===== OB-HAVO ANIMATSIYALARI ===== */
+        .weather-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        
+        .snowflake {
+            position: absolute;
+            color: #fff;
+            user-select: none;
+            pointer-events: none;
+            opacity: 0.8;
+            font-size: 20px;
+            animation: fall linear infinite;
+        }
+        
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+        
+        .raindrop {
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(174,238,238,0.4));
+            animation: rain linear infinite;
+        }
+        
+        @keyframes rain {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+        
+        .cloud {
+            position: absolute;
+            color: rgba(255,255,255,0.3);
+            font-size: 80px;
+            animation: float linear infinite;
+            user-select: none;
+            pointer-events: none;
+        }
+        
+        @keyframes float {
+            from {
+                transform: translateX(-100px);
+            }
+            to {
+                transform: translateX(calc(100vw + 100px));
+            }
+        }
+        
+        .leaf {
+            position: absolute;
+            color: #90be6d;
+            font-size: 24px;
+            animation: windy linear infinite;
+            transform-origin: center;
+            user-select: none;
+            pointer-events: none;
+        }
+        
+        @keyframes windy {
+            0% {
+                transform: translate(0,0) rotate(0deg);
+            }
+            25% {
+                transform: translate(50px,20px) rotate(90deg);
+            }
+            50% {
+                transform: translate(100px,-10px) rotate(180deg);
+            }
+            75% {
+                transform: translate(150px,30px) rotate(270deg);
+            }
+            100% {
+                transform: translate(200px,0) rotate(360deg);
+            }
+        }
+        
+        .sun {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, #ffd166, #ffb347, transparent 70%);
+            border-radius: 50%;
+            animation: pulse 3s ease-in-out infinite;
+            opacity: 0.6;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+        }
+        
+        .haze {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, 
+                rgba(255,183,77,0.1) 0%, 
+                rgba(255,167,38,0.1) 25%, 
+                rgba(255,152,0,0.1) 50%, 
+                rgba(255,138,0,0.1) 75%, 
+                rgba(255,183,77,0.1) 100%);
+            background-size: 200% 200%;
+            animation: haze 10s ease infinite;
+        }
+        
+        @keyframes haze {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+        
+        .lightning {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            opacity: 0;
+            animation: lightning 5s infinite;
+            pointer-events: none;
+        }
+        
+        @keyframes lightning {
+            0%, 95%, 98%, 100% {
+                opacity: 0;
+            }
+            96%, 97% {
+                opacity: 0.8;
+            }
+        }
+        
+        .thunder-cloud {
+            position: absolute;
+            color: #2d3748;
+            font-size: 100px;
+            animation: thunderFloat 10s linear infinite;
+        }
+        
+        @keyframes thunderFloat {
+            from {
+                transform: translateX(-150px);
+            }
+            to {
+                transform: translateX(calc(100vw + 150px));
+            }
+        }
     </style>
 </head>
 <body>
@@ -671,6 +844,8 @@ HTML_TEMPLATE = """
         
        
     </div>
+
+    
     
     <script>
         function filterCities() {
@@ -715,8 +890,7 @@ HTML_TEMPLATE = """
         document.getElementById('citySearch').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') filterCities();
         });
-        
-        document.addEventListener('DOMContentLoaded', function() {
+                document.addEventListener('DOMContentLoaded', function() {
             const searchInput = document.getElementById('citySearch');
             if (searchInput) searchInput.value = '';
             
@@ -732,7 +906,164 @@ HTML_TEMPLATE = """
                     activeCard.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
                 }, 100);
             }
+            
+            // ===== OB-HAVO ANIMATSIYASINI ISHGA TUSHIRISH =====
+            {% if forecast and forecast|length > 0 %}
+            const weatherCondition = "{{ forecast[0].condition.name }}";
+            const temperature = {{ forecast[0].temp_max }};
+            createWeatherAnimation(weatherCondition, temperature);
+            {% endif %}
         });
+
+                // ===== OB-HAVO ANIMATSIYASI FUNKSIYASI =====
+        function createWeatherAnimation(weatherCondition, temperature) {
+            // Avval eski animatsiyalarni tozalash
+            const oldBg = document.getElementById('weatherBg');
+            if (oldBg) oldBg.remove();
+            
+            // Yangi fon yaratish
+            const bg = document.createElement('div');
+            bg.id = 'weatherBg';
+            bg.className = 'weather-bg';
+            document.body.appendChild(bg);
+            
+            const condition = weatherCondition.toLowerCase();
+            const temp = parseInt(temperature);
+            
+            // Qor (snow) - temperature < 0 yoki conditionda qor bo'lsa
+            if (temp < 0 || condition.includes('qor') || condition.includes('snow') || condition.includes('salqin')) {
+                for (let i = 0; i < 50; i++) {
+                    const snow = document.createElement('div');
+                    snow.className = 'snowflake';
+                    snow.innerHTML = '❄️';
+                    snow.style.left = Math.random() * 100 + '%';
+                    snow.style.animationDuration = Math.random() * 3 + 3 + 's';
+                    snow.style.animationDelay = Math.random() * 5 + 's';
+                    snow.style.fontSize = Math.random() * 20 + 15 + 'px';
+                    snow.style.opacity = Math.random() * 0.5 + 0.3;
+                    bg.appendChild(snow);
+                }
+            }
+            
+            // Yomg'ir (rain)
+            else if (condition.includes('yomg\'ir') || condition.includes('rain') || condition.includes('yomgir')) {
+                // Bulutlar
+                for (let i = 0; i < 5; i++) {
+                    const cloud = document.createElement('div');
+                    cloud.className = 'cloud';
+                    cloud.innerHTML = '☁️';
+                    cloud.style.top = Math.random() * 30 + '%';
+                    cloud.style.animationDuration = Math.random() * 20 + 30 + 's';
+                    cloud.style.animationDelay = Math.random() * -20 + 's';
+                    cloud.style.fontSize = Math.random() * 40 + 60 + 'px';
+                    cloud.style.opacity = Math.random() * 0.3 + 0.2;
+                    bg.appendChild(cloud);
+                }
+                
+                // Yomg'ir tomchilari
+                for (let i = 0; i < 100; i++) {
+                    const rain = document.createElement('div');
+                    rain.className = 'raindrop';
+                    rain.style.left = Math.random() * 100 + '%';
+                    rain.style.animationDuration = Math.random() * 0.5 + 0.8 + 's';
+                    rain.style.animationDelay = Math.random() * 2 + 's';
+                    rain.style.opacity = Math.random() * 0.5 + 0.3;
+                    bg.appendChild(rain);
+                }
+                
+                // Kuchli yomg'ir bo'lsa chaqmoq
+                if (condition.includes('kuchli')) {
+                    const lightning = document.createElement('div');
+                    lightning.className = 'lightning';
+                    bg.appendChild(lightning);
+                    
+                    const thunderCloud = document.createElement('div');
+                    thunderCloud.className = 'thunder-cloud';
+                    thunderCloud.innerHTML = '🌩️';
+                    thunderCloud.style.top = Math.random() * 20 + '%';
+                    thunderCloud.style.animationDuration = Math.random() * 15 + 20 + 's';
+                    bg.appendChild(thunderCloud);
+                }
+            }
+            
+            // Shamol (windy)
+            else if (condition.includes('shamol') || condition.includes('wind')) {
+                for (let i = 0; i < 30; i++) {
+                    const leaf = document.createElement('div');
+                    leaf.className = 'leaf';
+                    const leaves = ['🍂', '🍁', '🌿', '🍃'];
+                    leaf.innerHTML = leaves[Math.floor(Math.random() * leaves.length)];
+                    leaf.style.left = Math.random() * 100 + '%';
+                    leaf.style.top = Math.random() * 100 + '%';
+                    leaf.style.animationDuration = Math.random() * 5 + 5 + 's';
+                    leaf.style.animationDelay = Math.random() * 3 + 's';
+                    leaf.style.fontSize = Math.random() * 20 + 15 + 'px';
+                    bg.appendChild(leaf);
+                }
+            }
+            
+            // Jazirama issiq (hot)
+            else if (temp > 35 || condition.includes('jazirama') || condition.includes('issiq')) {
+                const haze = document.createElement('div');
+                haze.className = 'haze';
+                bg.appendChild(haze);
+                
+                const sun = document.createElement('div');
+                sun.className = 'sun';
+                bg.appendChild(sun);
+            }
+            
+            // Quyoshli (sunny)
+            else if (temp > 25 || condition.includes('quyoshli') || condition.includes('sunny') || condition.includes('ochiq')) {
+                const sun = document.createElement('div');
+                sun.className = 'sun';
+                bg.appendChild(sun);
+                
+                // Yengil bulutlar
+                for (let i = 0; i < 3; i++) {
+                    const cloud = document.createElement('div');
+                    cloud.className = 'cloud';
+                    cloud.innerHTML = '☁️';
+                    cloud.style.top = Math.random() * 30 + '%';
+                    cloud.style.animationDuration = Math.random() * 30 + 40 + 's';
+                    cloud.style.animationDelay = Math.random() * -20 + 's';
+                    cloud.style.fontSize = Math.random() * 30 + 40 + 'px';
+                    cloud.style.opacity = Math.random() * 0.2 + 0.1;
+                    bg.appendChild(cloud);
+                }
+            }
+            
+            // Bulutli (cloudy)
+            else if (condition.includes('bulutli') || condition.includes('cloud')) {
+                for (let i = 0; i < 8; i++) {
+                    const cloud = document.createElement('div');
+                    cloud.className = 'cloud';
+                    cloud.innerHTML = '☁️';
+                    cloud.style.top = Math.random() * 50 + '%';
+                    cloud.style.animationDuration = Math.random() * 30 + 40 + 's';
+                    cloud.style.animationDelay = Math.random() * -30 + 's';
+                    cloud.style.fontSize = Math.random() * 40 + 50 + 'px';
+                    cloud.style.opacity = Math.random() * 0.3 + 0.2;
+                    bg.appendChild(cloud);
+                }
+            }
+            
+            // Salqin (cool)
+            else if (temp < 15) {
+                for (let i = 0; i < 20; i++) {
+                    const leaf = document.createElement('div');
+                    leaf.className = 'leaf';
+                    leaf.innerHTML = '🍂';
+                    leaf.style.left = Math.random() * 100 + '%';
+                    leaf.style.top = Math.random() * 100 + '%';
+                    leaf.style.animationDuration = Math.random() * 8 + 8 + 's';
+                    leaf.style.animationDelay = Math.random() * 5 + 's';
+                    leaf.style.fontSize = Math.random() * 15 + 10 + 'px';
+                    leaf.style.opacity = Math.random() * 0.5 + 0.2;
+                    bg.appendChild(leaf);
+                }
+            }
+        }
     </script>
             <!-- ===== FOOTER ===== -->
         <div style="margin-top: 48px;">
