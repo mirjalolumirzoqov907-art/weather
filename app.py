@@ -13,6 +13,7 @@ import csv
 from pathlib import Path
 
 app = Flask(__name__)
+API_KEYS = set()
 
 DATA_DIR = Path('weather_data')
 DATA_DIR.mkdir(exist_ok=True)
@@ -1181,14 +1182,25 @@ def home():
 
 @app.route('/api/weather/<city>')
 def api_weather(city):
-    days = request.args.get('days', 7, type=int)
+
+    key = request.args.get("apikey")
+
+    if key not in API_KEYS:
+        return jsonify({"error":"invalid api key"}),403
+
+    days = request.args.get('days',7,type=int)
+
     if city not in SHAHARLAR:
-        return jsonify({'error': 'Shahar topilmadi'}), 404
-    forecast = get_weather(city, days)
+        return jsonify({'error':'Shahar topilmadi'}),404
+
+    forecast = get_weather(city,days)
+
     city_info = SHAHARLAR[city]
+
     return jsonify({
-        'city': city_info['name'], 'region': city_info['region'],
-        'forecast': forecast, 'updated': datetime.now().isoformat()
+        'city':city_info['name'],
+        'region':city_info['region'],
+        'forecast':forecast
     })
 
 @app.route('/api/cities')
@@ -1204,10 +1216,19 @@ def api_health():
         'status': 'healthy', 'timestamp': datetime.now().isoformat(),
         'cities': len(SHAHARLAR), 'data_dir': str(DATA_DIR)
     })
+@app.route("/api/generate-key")
+def generate_key():
 
+    key = str(uuid.uuid4())
+
+    API_KEYS.add(key)
+
+    return jsonify({
+        "api_key": key
+    })
 
 import os
-
+import uuid
 
 
 
