@@ -1,0 +1,61 @@
+{
+  "city": "Toshkent",
+  "date": "2026-03-12 10:40:12",
+  "forecast": [
+    {
+      "sana": "13.03",
+      "hafta_kuni": "Friday",
+      "toliq_sana": "13.03.2026",
+      "max": 5,
+      "min": -5,
+      "yogin": 0.0,
+      "shamol": 9.3,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "14.03",
+      "hafta_kuni": "Saturday",
+      "toliq_sana": "14.03.2026",
+      "max": 8,
+      "min": -3,
+      "yogin": 0.0,
+      "shamol": 12.3,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "15.03",
+      "hafta_kuni": "Sunday",
+      "toliq_sana": "15.03.2026",
+      "max": 11,
+      "min": -2,
+      "yogin": 0.0,
+      "shamol": 9.8,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "16.03",
+      "hafta_kuni": "Monday",
+      "toliq_sana": "16.03.2026",
+      "max": 12,
+      "min": 0,
+      "yogin": 0.0,
+      "shamol": 7.9,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "17.03",
+      "hafta_kuni": "Tuesday",
+      "toliq_sana": "17.03.2026",
+      "max": 14,
+      "min": 0,
+      "yogin": 0.0,
+      "shamol": 11.6,
+      "holat": "Salqin",
+      "icon": "☁️"
+    }
+  ]
+}

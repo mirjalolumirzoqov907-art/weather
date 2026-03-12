@@ -1,0 +1,116 @@
+{
+  "city": "Toshkent",
+  "date": "2026-03-12 10:39:11",
+  "forecast": [
+    {
+      "sana": "13.03",
+      "hafta_kuni": "Friday",
+      "toliq_sana": "13.03.2026",
+      "max": 5,
+      "min": -5,
+      "yogin": 0.0,
+      "shamol": 9.3,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "14.03",
+      "hafta_kuni": "Saturday",
+      "toliq_sana": "14.03.2026",
+      "max": 8,
+      "min": -3,
+      "yogin": 0.0,
+      "shamol": 12.3,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "15.03",
+      "hafta_kuni": "Sunday",
+      "toliq_sana": "15.03.2026",
+      "max": 11,
+      "min": -2,
+      "yogin": 0.0,
+      "shamol": 9.8,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "16.03",
+      "hafta_kuni": "Monday",
+      "toliq_sana": "16.03.2026",
+      "max": 12,
+      "min": 0,
+      "yogin": 0.0,
+      "shamol": 7.9,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "17.03",
+      "hafta_kuni": "Tuesday",
+      "toliq_sana": "17.03.2026",
+      "max": 14,
+      "min": 0,
+      "yogin": 0.0,
+      "shamol": 11.6,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "18.03",
+      "hafta_kuni": "Wednesday",
+      "toliq_sana": "18.03.2026",
+      "max": 15,
+      "min": 1,
+      "yogin": 0.0,
+      "shamol": 7.7,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "19.03",
+      "hafta_kuni": "Thursday",
+      "toliq_sana": "19.03.2026",
+      "max": 14,
+      "min": 7,
+      "yogin": 0.9,
+      "shamol": 9.7,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "20.03",
+      "hafta_kuni": "Friday",
+      "toliq_sana": "20.03.2026",
+      "max": 15,
+      "min": 4,
+      "yogin": 3.6,
+      "shamol": 14.9,
+      "holat": "Yomg'irli",
+      "icon": "🌦"
+    },
+    {
+      "sana": "21.03",
+      "hafta_kuni": "Saturday",
+      "toliq_sana": "21.03.2026",
+      "max": 18,
+      "min": 11,
+      "yogin": 0.6,
+      "shamol": 11.0,
+      "holat": "Bulutli",
+      "icon": "☁️"
+    },
+    {
+      "sana": "22.03",
+      "hafta_kuni": "Sunday",
+      "toliq_sana": "22.03.2026",
+      "max": 21,
+      "min": 14,
+      "yogin": 0.6,
+      "shamol": 15.3,
+      "holat": "Bulutli",
+      "icon": "☁️"
+    }
+  ]
+}

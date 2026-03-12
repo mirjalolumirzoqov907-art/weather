@@ -1,0 +1,61 @@
+{
+  "city": "Buxoro",
+  "date": "2026-03-12 10:40:26",
+  "forecast": [
+    {
+      "sana": "13.03",
+      "hafta_kuni": "Friday",
+      "toliq_sana": "13.03.2026",
+      "max": 8,
+      "min": -4,
+      "yogin": 0.0,
+      "shamol": 14.9,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "14.03",
+      "hafta_kuni": "Saturday",
+      "toliq_sana": "14.03.2026",
+      "max": 12,
+      "min": -1,
+      "yogin": 0.0,
+      "shamol": 14.2,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "15.03",
+      "hafta_kuni": "Sunday",
+      "toliq_sana": "15.03.2026",
+      "max": 11,
+      "min": 1,
+      "yogin": 0.0,
+      "shamol": 12.0,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "16.03",
+      "hafta_kuni": "Monday",
+      "toliq_sana": "16.03.2026",
+      "max": 14,
+      "min": 1,
+      "yogin": 0.0,
+      "shamol": 9.0,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "17.03",
+      "hafta_kuni": "Tuesday",
+      "toliq_sana": "17.03.2026",
+      "max": 16,
+      "min": 3,
+      "yogin": 0.0,
+      "shamol": 13.7,
+      "holat": "Bulutli",
+      "icon": "☁️"
+    }
+  ]
+}

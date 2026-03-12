@@ -1,0 +1,116 @@
+{
+  "city": "Termiz",
+  "date": "2026-03-12 10:14:18",
+  "forecast": [
+    {
+      "sana": "13.03.2026",
+      "hafta_kuni": "Friday",
+      "qisqa_sana": "13.03",
+      "max_harorat": 9,
+      "min_harorat": 5,
+      "yogin": 0.0,
+      "shamol": 11.8,
+      "holat": "salqin",
+      "icon": "🌥️"
+    },
+    {
+      "sana": "14.03.2026",
+      "hafta_kuni": "Saturday",
+      "qisqa_sana": "14.03",
+      "max_harorat": 14,
+      "min_harorat": 4,
+      "yogin": 0.0,
+      "shamol": 12.0,
+      "holat": "bulutli",
+      "icon": "☁️"
+    },
+    {
+      "sana": "15.03.2026",
+      "hafta_kuni": "Sunday",
+      "qisqa_sana": "15.03",
+      "max_harorat": 12,
+      "min_harorat": 6,
+      "yogin": 4.8,
+      "shamol": 29.2,
+      "holat": "yomg'irli",
+      "icon": "🌦️"
+    },
+    {
+      "sana": "16.03.2026",
+      "hafta_kuni": "Monday",
+      "qisqa_sana": "16.03",
+      "max_harorat": 13,
+      "min_harorat": 7,
+      "yogin": 0.0,
+      "shamol": 27.1,
+      "holat": "bulutli",
+      "icon": "☁️"
+    },
+    {
+      "sana": "17.03.2026",
+      "hafta_kuni": "Tuesday",
+      "qisqa_sana": "17.03",
+      "max_harorat": 17,
+      "min_harorat": 6,
+      "yogin": 0.0,
+      "shamol": 19.3,
+      "holat": "bulutli",
+      "icon": "☁️"
+    },
+    {
+      "sana": "18.03.2026",
+      "hafta_kuni": "Wednesday",
+      "qisqa_sana": "18.03",
+      "max_harorat": 14,
+      "min_harorat": 10,
+      "yogin": 5.1,
+      "shamol": 14.4,
+      "holat": "yomg'ir",
+      "icon": "🌧️"
+    },
+    {
+      "sana": "19.03.2026",
+      "hafta_kuni": "Thursday",
+      "qisqa_sana": "19.03",
+      "max_harorat": 17,
+      "min_harorat": 9,
+      "yogin": 0.3,
+      "shamol": 16.5,
+      "holat": "bulutli",
+      "icon": "☁️"
+    },
+    {
+      "sana": "20.03.2026",
+      "hafta_kuni": "Friday",
+      "qisqa_sana": "20.03",
+      "max_harorat": 19,
+      "min_harorat": 8,
+      "yogin": 2.7,
+      "shamol": 32.4,
+      "holat": "yomg'irli",
+      "icon": "🌦️"
+    },
+    {
+      "sana": "21.03.2026",
+      "hafta_kuni": "Saturday",
+      "qisqa_sana": "21.03",
+      "max_harorat": 25,
+      "min_harorat": 14,
+      "yogin": 0.0,
+      "shamol": 19.9,
+      "holat": "ochiq",
+      "icon": "⛅"
+    },
+    {
+      "sana": "22.03.2026",
+      "hafta_kuni": "Sunday",
+      "qisqa_sana": "22.03",
+      "max_harorat": 25,
+      "min_harorat": 18,
+      "yogin": 0.0,
+      "shamol": 12.4,
+      "holat": "ochiq",
+      "icon": "⛅"
+    }
+  ]
+}

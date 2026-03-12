@@ -1,0 +1,99 @@
+{
+  "city": "Toshkent",
+  "city_key": "toshkent",
+  "date": "2026-03-12 10:47:27",
+  "forecast_days": 7,
+  "forecast": [
+    {
+      "sana": "13.03",
+      "toliq_sana": "13.03.2026",
+      "hafta_kuni": "Juma",
+      "hafta_kuni_qisqa": "Ju",
+      "max": 5,
+      "min": -5,
+      "yogin": 0.0,
+      "shamol": 9.3,
+      "holat": "Salqin",
+      "icon": "🌥️",
+      "bg_color": "#E1E8ED"
+    },
+    {
+      "sana": "14.03",
+      "toliq_sana": "14.03.2026",
+      "hafta_kuni": "Shanba",
+      "hafta_kuni_qisqa": "Sh",
+      "max": 8,
+      "min": -3,
+      "yogin": 0.0,
+      "shamol": 12.3,
+      "holat": "Salqin",
+      "icon": "🌥️",
+      "bg_color": "#E1E8ED"
+    },
+    {
+      "sana": "15.03",
+      "toliq_sana": "15.03.2026",
+      "hafta_kuni": "Yakshanba",
+      "hafta_kuni_qisqa": "Ya",
+      "max": 11,
+      "min": -2,
+      "yogin": 0.0,
+      "shamol": 9.8,
+      "holat": "Bulutli",
+      "icon": "☁️",
+      "bg_color": "#E9ECEF"
+    },
+    {
+      "sana": "16.03",
+      "toliq_sana": "16.03.2026",
+      "hafta_kuni": "Dushanba",
+      "hafta_kuni_qisqa": "Du",
+      "max": 12,
+      "min": 0,
+      "yogin": 0.0,
+      "shamol": 7.9,
+      "holat": "Bulutli",
+      "icon": "☁️",
+      "bg_color": "#E9ECEF"
+    },
+    {
+      "sana": "17.03",
+      "toliq_sana": "17.03.2026",
+      "hafta_kuni": "Seshanba",
+      "hafta_kuni_qisqa": "Se",
+      "max": 14,
+      "min": 0,
+      "yogin": 0.0,
+      "shamol": 11.6,
+      "holat": "Bulutli",
+      "icon": "☁️",
+      "bg_color": "#E9ECEF"
+    },
+    {
+      "sana": "18.03",
+      "toliq_sana": "18.03.2026",
+      "hafta_kuni": "Chorshanba",
+      "hafta_kuni_qisqa": "Ch",
+      "max": 15,
+      "min": 1,
+      "yogin": 0.0,
+      "shamol": 7.7,
+      "holat": "Bulutli",
+      "icon": "☁️",
+      "bg_color": "#E9ECEF"
+    },
+    {
+      "sana": "19.03",
+      "toliq_sana": "19.03.2026",
+      "hafta_kuni": "Payshanba",
+      "hafta_kuni_qisqa": "Pa",
+      "max": 14,
+      "min": 7,
+      "yogin": 0.9,
+      "shamol": 9.7,
+      "holat": "Yengil yomg'ir",
+      "icon": "☔️",
+      "bg_color": "#F5F8FA"
+    }
+  ]
+}

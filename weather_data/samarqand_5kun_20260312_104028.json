@@ -1,0 +1,61 @@
+{
+  "city": "Samarqand",
+  "date": "2026-03-12 10:40:28",
+  "forecast": [
+    {
+      "sana": "13.03",
+      "hafta_kuni": "Friday",
+      "toliq_sana": "13.03.2026",
+      "max": 5,
+      "min": -4,
+      "yogin": 0.0,
+      "shamol": 16.5,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "14.03",
+      "hafta_kuni": "Saturday",
+      "toliq_sana": "14.03.2026",
+      "max": 10,
+      "min": -1,
+      "yogin": 0.0,
+      "shamol": 13.2,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "15.03",
+      "hafta_kuni": "Sunday",
+      "toliq_sana": "15.03.2026",
+      "max": 9,
+      "min": 1,
+      "yogin": 1.1,
+      "shamol": 12.9,
+      "holat": "Yomg'irli",
+      "icon": "🌦"
+    },
+    {
+      "sana": "16.03",
+      "hafta_kuni": "Monday",
+      "toliq_sana": "16.03.2026",
+      "max": 10,
+      "min": 1,
+      "yogin": 0.0,
+      "shamol": 8.9,
+      "holat": "Salqin",
+      "icon": "☁️"
+    },
+    {
+      "sana": "17.03",
+      "hafta_kuni": "Tuesday",
+      "toliq_sana": "17.03.2026",
+      "max": 13,
+      "min": 2,
+      "yogin": 0.0,
+      "shamol": 13.0,
+      "holat": "Salqin",
+      "icon": "☁️"
+    }
+  ]
+}

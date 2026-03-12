@@ -1,0 +1,168 @@
+{
+  "city": "Urganch",
+  "city_key": "urganch",
+  "date": "2026-03-12 11:01:50",
+  "forecast_days": 10,
+  "forecast": [
+    {
+      "date": "13.03",
+      "full_date": "13.03.2026",
+      "weekday": "Juma",
+      "weekday_short": "Ju",
+      "temp_max": 6,
+      "temp_min": -7,
+      "precipitation": 0.0,
+      "wind_speed": 19.3,
+      "condition": {
+        "name": "Salqin",
+        "icon": "🌥️",
+        "color": "#334155",
+        "bg": "#E1E8ED"
+      }
+    },
+    {
+      "date": "14.03",
+      "full_date": "14.03.2026",
+      "weekday": "Shanba",
+      "weekday_short": "Sh",
+      "temp_max": 10,
+      "temp_min": -4,
+      "precipitation": 0.0,
+      "wind_speed": 20.0,
+      "condition": {
+        "name": "Bulutli",
+        "icon": "☁️",
+        "color": "#475569",
+        "bg": "#E9ECEF"
+      }
+    },
+    {
+      "date": "15.03",
+      "full_date": "15.03.2026",
+      "weekday": "Yakshanba",
+      "weekday_short": "Ya",
+      "temp_max": 11,
+      "temp_min": -2,
+      "precipitation": 0.0,
+      "wind_speed": 17.2,
+      "condition": {
+        "name": "Bulutli",
+        "icon": "☁️",
+        "color": "#475569",
+        "bg": "#E9ECEF"
+      }
+    },
+    {
+      "date": "16.03",
+      "full_date": "16.03.2026",
+      "weekday": "Dushanba",
+      "weekday_short": "Du",
+      "temp_max": 12,
+      "temp_min": -1,
+      "precipitation": 0.0,
+      "wind_speed": 18.9,
+      "condition": {
+        "name": "Bulutli",
+        "icon": "☁️",
+        "color": "#475569",
+        "bg": "#E9ECEF"
+      }
+    },
+    {
+      "date": "17.03",
+      "full_date": "17.03.2026",
+      "weekday": "Seshanba",
+      "weekday_short": "Se",
+      "temp_max": 15,
+      "temp_min": 1,
+      "precipitation": 0.0,
+      "wind_speed": 25.5,
+      "condition": {
+        "name": "Bulutli",
+        "icon": "☁️",
+        "color": "#64748B",
+        "bg": "#F0F2F5"
+      }
+    },
+    {
+      "date": "18.03",
+      "full_date": "18.03.2026",
+      "weekday": "Chorshanba",
+      "weekday_short": "Ch",
+      "temp_max": 15,
+      "temp_min": 2,
+      "precipitation": 0.0,
+      "wind_speed": 17.3,
+      "condition": {
+        "name": "Bulutli",
+        "icon": "☁️",
+        "color": "#64748B",
+        "bg": "#F0F2F5"
+      }
+    },
+    {
+      "date": "19.03",
+      "full_date": "19.03.2026",
+      "weekday": "Payshanba",
+      "weekday_short": "Pa",
+      "temp_max": 14,
+      "temp_min": 1,
+      "precipitation": 0.0,
+      "wind_speed": 12.6,
+      "condition": {
+        "name": "Bulutli",
+        "icon": "☁️",
+        "color": "#475569",
+        "bg": "#E9ECEF"
+      }
+    },
+    {
+      "date": "20.03",
+      "full_date": "20.03.2026",
+      "weekday": "Juma",
+      "weekday_short": "Ju",
+      "temp_max": 17,
+      "temp_min": 2,
+      "precipitation": 0.0,
+      "wind_speed": 13.5,
+      "condition": {
+        "name": "Bulutli",
+        "icon": "☁️",
+        "color": "#64748B",
+        "bg": "#F0F2F5"
+      }
+    },
+    {
+      "date": "21.03",
+      "full_date": "21.03.2026",
+      "weekday": "Shanba",
+      "weekday_short": "Sh",
+      "temp_max": 19,
+      "temp_min": 9,
+      "precipitation": 0.0,
+      "wind_speed": 22.3,
+      "condition": {
+        "name": "Bulutli",
+        "icon": "☁️",
+        "color": "#64748B",
+        "bg": "#F0F2F5"
+      }
+    },
+    {
+      "date": "22.03",
+      "full_date": "22.03.2026",
+      "weekday": "Yakshanba",
+      "weekday_short": "Ya",
+      "temp_max": 18,
+      "temp_min": 13,
+      "precipitation": 0.0,
+      "wind_speed": 25.2,
+      "condition": {
+        "name": "Bulutli",
+        "icon": "☁️",
+        "color": "#64748B",
+        "bg": "#F0F2F5"
+      }
+    }
+  ]
+}
