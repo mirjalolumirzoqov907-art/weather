@@ -749,9 +749,11 @@ HTML_TEMPLATE = """
                         <div style="font-size: 24px; font-weight: 700; background: linear-gradient(135deg, #1E293B, #334155); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 8px;">Boboyev Asliddin</div>
                         <div style="display: inline-block; background: rgba(59,130,246,0.1); padding: 6px 16px; border-radius: 40px; font-size: 14px; font-weight: 600; color: #3B82F6; margin-bottom: 16px;">🐍 Python Dasturchi</div>
                         <div style="font-size: 15px; color: #475569; line-height: 1.7; max-width: 500px;">
-                            Ushbu loyiha Boboyev Asliddin tomonidan O'zbekiston shaharlari uchun 
-                            zamonaviy va aniq ob-havo prognoz qilish veb-ilovasi sifatida ishlab chiqilgan. 
-                            Open-Meteo API asosida real vaqt rejimida ma'lumotlar olinadi.
+                            Mazkur veb-ilova Boboyev Asliddin tomonidan yaratilgan bo'lib, unda 
+                        O'zbekistonning 13 ta yirik shahri uchun ob-havo prognozlarini taqdim etadi. 
+                        Loyiha asosida maxsus o'qitilgan mashinaviy o'qitish modeli yotadi. Model 
+                        yillar davomida to'plangan tarixiy ob-havo ma'lumotlari ustida o'qitilgan 
+                        va mustaqil ravishda prognozlar ishlab chiqaradi.
                         </div>
                     </div>
                     
@@ -772,8 +774,8 @@ HTML_TEMPLATE = """
                                 <i class="fas fa-arrow-right" style="margin-left: auto; opacity: 0.8;"></i>
                             </a>
                             
-                            <!-- Telegram -->
-                            <a href="https://t.me/asliddin_dev" target="_blank" 
+                           
+                            <a href="https://t.me/boboyev_asliddin" target="_blank" 
                                style="display: flex; align-items: center; gap: 14px; padding: 12px 20px; 
                                       background: white; border-radius: 60px; font-size: 15px; font-weight: 500; 
                                       color: #334155; text-decoration: none; border: 1px solid #E2E8F0;
@@ -783,7 +785,7 @@ HTML_TEMPLATE = """
                                 <span style="margin-left: auto; font-size: 13px; color: #64748B;">@asliddin_dev</span>
                             </a>
                             
-                            <!-- GitHub -->
+                            
                             <a href="https://github.com/asliddin20052106" target="_blank" 
                                style="display: flex; align-items: center; gap: 14px; padding: 12px 20px; 
                                       background: white; border-radius: 60px; font-size: 15px; font-weight: 500; 
@@ -794,8 +796,8 @@ HTML_TEMPLATE = """
                                 <span style="margin-left: auto; font-size: 13px; color: #64748B;">asliddin20052106</span>
                             </a>
                             
-                            <!-- Email -->
-                            <a href="mailto:asliddin.dev@gmail.com" 
+                           
+                            <a href="mailto:boboyev0621@gmail.com" 
                                style="display: flex; align-items: center; gap: 14px; padding: 12px 20px; 
                                       background: white; border-radius: 60px; font-size: 15px; font-weight: 500; 
                                       color: #334155; text-decoration: none; border: 1px solid #E2E8F0;
@@ -808,7 +810,6 @@ HTML_TEMPLATE = """
                     </div>
                 </div>
                 
-                <!-- Pastki qism - mualliflik huquqi -->
                 <div style="text-align: center; margin-top: 36px; padding-top: 24px; border-top: 1px solid #E2E8F0;">
                     <div style="display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap;">
                         <span style="color: #64748B; font-size: 15px;">© 2026 Boboyev Asliddin</span>
