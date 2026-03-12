@@ -824,8 +824,10 @@ def run_bot():
 
     app_bot.run_polling()
 
-threading.Thread(target=run_bot).start()
-
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
+
+    # botni alohida threadda ishga tushiramiz
+    threading.Thread(target=run_bot, daemon=True).start()
+
     app.run(host='0.0.0.0', port=port)
