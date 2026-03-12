@@ -782,7 +782,7 @@ HTML_TEMPLATE = """
                                       transition: all 0.2s ease;">
                                 <i class="fab fa-telegram" style="color: #0088cc; font-size: 18px;"></i>
                                 <span>Telegram</span>
-                                <span style="margin-left: auto; font-size: 13px; color: #64748B;">@asliddin_dev</span>
+                                <span style="margin-left: auto; font-size: 13px; color: #64748B;">@boboyev_asliddin</span>
                             </a>
                             
                             
@@ -804,7 +804,7 @@ HTML_TEMPLATE = """
                                       transition: all 0.2s ease;">
                                 <i class="fas fa-envelope" style="color: #EA4335; font-size: 18px;"></i>
                                 <span>Email</span>
-                                <span style="margin-left: auto; font-size: 13px; color: #64748B;">asliddin.dev</span>
+                                <span style="margin-left: auto; font-size: 13px; color: #64748B;">boboyev0621</span>
                             </a>
                         </div>
                     </div>
