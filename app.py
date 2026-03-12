@@ -669,10 +669,7 @@ HTML_TEMPLATE = """
             {% endfor %}
         </div>
         
-        <div class="footer">
-          
-            <p style="font-size: 12px; margin-top: 8px; opacity: 0.7;">So'nggi yangilanish: {{ update_time }}</p>
-        </div>
+       
     </div>
     
     <script>
