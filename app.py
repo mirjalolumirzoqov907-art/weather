@@ -790,6 +790,42 @@ def api_health():
 
 import os
 
+
+
+
+import threading
+from telegram import Update
+from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+import requests
+
+TOKEN = "7727645806:AAG7M5WxZ3aKrEil7onoaBBYPdXrE54YfaA"
+
+async def weather(update: Update, context: ContextTypes.DEFAULT_TYPE):
+
+    url = "https://api.open-meteo.com/v1/forecast"
+
+    params = {
+        "latitude":41.2995,
+        "longitude":69.2401,
+        "current_weather":True
+    }
+
+    r = requests.get(url,params=params).json()
+
+    temp = r["current_weather"]["temperature"]
+
+    await update.message.reply_text(f"🌤 Toshkent ob-havo\n🌡 {temp}°C")
+
+def run_bot():
+
+    app_bot = ApplicationBuilder().token(TOKEN).build()
+
+    app_bot.add_handler(CommandHandler("weather",weather))
+
+    app_bot.run_polling()
+
+threading.Thread(target=run_bot).start()
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
