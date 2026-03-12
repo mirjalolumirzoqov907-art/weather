@@ -734,6 +734,92 @@ HTML_TEMPLATE = """
             }
         });
     </script>
+            <!-- ===== FOOTER ===== -->
+        <div style="margin-top: 48px;">
+            <!-- Divider -->
+            <div style="border-top: 2px solid rgba(255,255,255,0.8); margin-bottom: 24px;"></div>
+            
+            <!-- Footer asosiy qismi -->
+            <div style="background: rgba(255,255,255,0.9); backdrop-filter: blur(20px); border-radius: 28px; padding: 36px; box-shadow: 0 15px 35px -10px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.8); font-family: 'Inter', sans-serif;">
+                
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+                    
+                    <!-- Chap tomon - Dasturchi ma'lumotlari -->
+                    <div style="flex: 2; min-width: 300px;">
+                        <div style="font-size: 24px; font-weight: 700; background: linear-gradient(135deg, #1E293B, #334155); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 8px;">Boboyev Asliddin</div>
+                        <div style="display: inline-block; background: rgba(59,130,246,0.1); padding: 6px 16px; border-radius: 40px; font-size: 14px; font-weight: 600; color: #3B82F6; margin-bottom: 16px;">🐍 Python Dasturchi</div>
+                        <div style="font-size: 15px; color: #475569; line-height: 1.7; max-width: 500px;">
+                            Ushbu loyiha Boboyev Asliddin tomonidan O'zbekiston shaharlari uchun 
+                            zamonaviy va aniq ob-havo prognoz qilish veb-ilovasi sifatida ishlab chiqilgan. 
+                            Open-Meteo API asosida real vaqt rejimida ma'lumotlar olinadi.
+                        </div>
+                    </div>
+                    
+                    <!-- O'ng tomon - Ijtimoiy tarmoqlar va kontakt -->
+                    <div style="flex: 1; min-width: 280px;">
+                        <div style="font-size: 18px; font-weight: 600; color: #0F172A; margin-bottom: 20px;">📬 Bog'lanish</div>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <!-- Portfolio (asosiy link) -->
+                            <a href="https://asliddin20052106.github.io/asliddin/" target="_blank" 
+                               style="display: flex; align-items: center; gap: 14px; padding: 14px 20px; 
+                                      background: linear-gradient(135deg, #3B82F6, #8B5CF6); border-radius: 60px; 
+                                      font-size: 16px; font-weight: 600; color: white; text-decoration: none; 
+                                      border: none; box-shadow: 0 8px 20px rgba(59,130,246,0.3); 
+                                      transition: all 0.3s ease; margin-bottom: 4px;">
+                                <i class="fas fa-globe" style="font-size: 20px;"></i>
+                                <span>Portfolio</span>
+                                <i class="fas fa-arrow-right" style="margin-left: auto; opacity: 0.8;"></i>
+                            </a>
+                            
+                            <!-- Telegram -->
+                            <a href="https://t.me/asliddin_dev" target="_blank" 
+                               style="display: flex; align-items: center; gap: 14px; padding: 12px 20px; 
+                                      background: white; border-radius: 60px; font-size: 15px; font-weight: 500; 
+                                      color: #334155; text-decoration: none; border: 1px solid #E2E8F0;
+                                      transition: all 0.2s ease;">
+                                <i class="fab fa-telegram" style="color: #0088cc; font-size: 18px;"></i>
+                                <span>Telegram</span>
+                                <span style="margin-left: auto; font-size: 13px; color: #64748B;">@asliddin_dev</span>
+                            </a>
+                            
+                            <!-- GitHub -->
+                            <a href="https://github.com/asliddin20052106" target="_blank" 
+                               style="display: flex; align-items: center; gap: 14px; padding: 12px 20px; 
+                                      background: white; border-radius: 60px; font-size: 15px; font-weight: 500; 
+                                      color: #334155; text-decoration: none; border: 1px solid #E2E8F0;
+                                      transition: all 0.2s ease;">
+                                <i class="fab fa-github" style="font-size: 18px;"></i>
+                                <span>GitHub</span>
+                                <span style="margin-left: auto; font-size: 13px; color: #64748B;">asliddin20052106</span>
+                            </a>
+                            
+                            <!-- Email -->
+                            <a href="mailto:asliddin.dev@gmail.com" 
+                               style="display: flex; align-items: center; gap: 14px; padding: 12px 20px; 
+                                      background: white; border-radius: 60px; font-size: 15px; font-weight: 500; 
+                                      color: #334155; text-decoration: none; border: 1px solid #E2E8F0;
+                                      transition: all 0.2s ease;">
+                                <i class="fas fa-envelope" style="color: #EA4335; font-size: 18px;"></i>
+                                <span>Email</span>
+                                <span style="margin-left: auto; font-size: 13px; color: #64748B;">asliddin.dev</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pastki qism - mualliflik huquqi -->
+                <div style="text-align: center; margin-top: 36px; padding-top: 24px; border-top: 1px solid #E2E8F0;">
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap;">
+                        <span style="color: #64748B; font-size: 15px;">© 2026 Boboyev Asliddin</span>
+                        <span style="color: #CBD5E1;">•</span>
+                        <span style="color: #64748B; font-size: 14px;"><i class="fas fa-code"></i> Barcha huquqlar himoyalangan</span>
+                        <span style="color: #CBD5E1;">•</span>
+                        <span style="color: #3B82F6; font-size: 14px;"><i class="fas fa-cloud-sun"></i> v1.0.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
 """
