@@ -670,7 +670,7 @@ HTML_TEMPLATE = """
         </div>
         
         <div class="footer">
-            <p><i class="fas fa-cloud-sun"></i> Ma'lumotlar Open-Meteo API orqali · <i class="fas fa-save"></i> weather_data/ papkasiga saqlanadi · <i class="fas fa-heart"></i> 2026</p>
+          
             <p style="font-size: 12px; margin-top: 8px; opacity: 0.7;">So'nggi yangilanish: {{ update_time }}</p>
         </div>
     </div>
